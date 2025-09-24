@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=\, initial-scale=1.0">
+    <title>Sample Online Items and Prices</title>
+    <style>
+         .container{
+           background-color: rgb(213, 214, 215);
+           border-radius: 5px;
+           padding-top: 1cap ;
+        }
+        main{
+            background-color: black;
+            color: white;
+            text-align: center;
+        }
+        button{
+            background-color: rgb(49, 92, 246);
+            border: none;
+            border-radius: 2px;
+            padding: 5px 2rem 5px 2rem;
+            color: white;
+             margin-left: 1rem;
+
+        }
+        .form{
+            border: 1px solid rgb(193, 192, 192);
+            box-shadow: 0 4px 6px rgb(183, 181, 181);
+            margin: 20px 20px 0 20px;
+            background-color: white;
+            border-radius: 5px;
+            height: 25rem;
+        }
+        label{
+            color: rgb(63, 17, 107);
+            margin-left: 1rem;
+
+            font-weight: bold;
+            
+        }
+        input{
+            margin: 1rem 0 1rem 1rem;
+            width: 200px;
+        }
+       
+        footer{
+            text-align: center;
+            padding: 5rem 0 2rem 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    <main class="main">
+        <h1>Sample Online Items and Prices</h1>
+    </main>
+
+    <div class="form"><br>
+        <form action="submit">
+            <label for="Laptop">Laptop($800 each):</label> <br>
+            <input type="number" placeholder="0" size="50"> <br>
+             <label for="Smartphone">Smartphone($400 each):</label> <br>
+            <input type="number" form="Smartphone" placeholder="0"> <br>
+             <label for="headphone">Headphones($50 each):</label> <br>
+            <input type="number" name="headphone" placeholder="0"> <br>
+             <label for="tablet">Tablets($300 each):</label> <br>
+            <input type="number" form="tablet" placeholder="0" size="100"> <br>
+            <button>Calculate Total Price</button>
+        </form>
+    </div>
+
+    <footer><h1>Total Price:$0</h1></footer>
+    </div>
+
+</body>
+</html>
