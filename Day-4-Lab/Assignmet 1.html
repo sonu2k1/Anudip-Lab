@@ -4,8 +4,74 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .super-container{
+            display:flex;
+            justify-content: center;
+        }
+        main{
+            color: blue;
+            text-align: center;
+        }
+        .container{
+            /* text-align: center; */
+            border:2px solid rgb(238, 233, 233);
+            width: 25rem;
+            height: 50rem;
+            box-shadow: 2px 2px 5px grey;
+           padding-left: 1rem;
+           
+        }
+        
+        .input{
+            width:23rem ;
+            
+            
+        }
+        button{
+            background-color: rgb(72, 163, 248);
+            border: none;
+            padding: 2px 2rem;
+            border-radius: 5px;
+            margin: 2rem 8rem;
+
+        }
+    </style>
 </head>
 <body>
+    <div class="super-container">
+    <div class="container">
+    <form action="submit">
+    <main><h1>Survey Form</h1></main>
+    <input class="input" type="text" placeholder="Enter your name"><br><br>
+    <input class="input" type="text" placeholder="Enter your email"><br><br>
+    <input class="input" type="text" placeholder="Enter your age"><br><br>
+    <!-- <input type="text"><br> -->
+
+    <select class="input" name="edu" id="edu"> 
+    <option value="student">Student</option>
+    <option value="teacher">Teacher</option>
+    <option value="hod">Hod</option>
+    <option value="dean">Dean</option>
+  </select> <br><br>
     
+    <label for="friends" ><b>Would you recommend this survey form to a friend?</b></label><br>
+    <input type="radio" name="friends" >Yes <br>
+    <input type="radio" name="friends" >No <br>
+    <input type="radio" name="friends" >Maybe <br><br>
+    <label for=""><b>Langeages and Framework known</b>(Check all that apply)</label><br>
+    <!-- <select name="" id="">Java</select><br> -->
+     <input type="checkbox">Java <br>
+      <input type="checkbox">Python <br>
+      <input type="checkbox">React <br>
+      <input type="checkbox">Angular <br>
+      <input type="checkbox">Spring <br><br>
+    <label for="suggest"><b>Any comments or suggestions</b></label><br>
+    <textarea name="suggest"class="input"></textarea><br>
+    <button>Sign Up</button>
+  
+    </form>
+    </div>
+    </div>
 </body>
 </html>
