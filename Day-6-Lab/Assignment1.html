@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Check Number Assignment</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="Assignment1.css">
+</head>
+<body>
+  <h2>Check Number Assignment</h2>
+  <button class="btn btn-primary btn-custom" onclick="checkNumber()">Check Number</button>
+
+  <script>
+    function checkNumber() {
+      // Get user input using prompt
+      let num = prompt("Enter a number:");
+
+      // Convert input to integer
+      num = parseInt(num);
+
+      // Check if input is a valid number
+      if (isNaN(num)) {
+        alert("Please enter a valid number!");
+        return;
+      }
+
+      // Determine if positive, negative, or zero
+      if (num > 0) {
+        alert("Positive number.");
+      } else if (num < 0) {
+        alert("Negative number.");
+      } else {
+        alert("Zero.");
+      }
+    }
+  </script>
+</body>
+</html>
