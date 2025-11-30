@@ -1,42 +1,77 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+General Page Styling
+/* body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container {
+  width: 90%;
+  max-width: 600px;
+  margin: 30px auto;
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+Headings
+h2 {
+  color: #333;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+
+button {
+  padding: 8px 16px;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: #1976d2;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  transition: 0.2s;
 }
 
-.card {
-  padding: 2em;
+button:hover {
+  background-color: #0d47a1;
 }
 
-.read-the-docs {
-  color: #888;
+
+button.reset {
+  background-color: #d32f2f;
 }
+
+button.reset:hover {
+  background-color: #b71c1c;
+}
+
+
+input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #aaa;
+}
+
+input:focus {
+  outline: none;
+  border-color: #1976d2;
+}
+
+ Section Divider 
+hr {
+  margin: 25px 0;
+  border: 0;
+  border-top: 1px solid #ddd;
+}
+
+Display Text 
+p {
+  font-size: 16px;
+  color: #444;
+}
+*/
